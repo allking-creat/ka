@@ -1,0 +1,98 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color:yellow;
+    color: white;
+    padding: 1em;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+section {
+    padding: 20px;
+}
+
+#featured-products {
+    background-color: #f4f4f4;
+}
+
+.product {
+    text-align: center;
+    margin: 20px;
+}
+
+.product img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+}
+
+.price {
+    color: #007BFF;
+    font-weight: bold;
+}
+
+button {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#shopping-cart {
+    border-top: 1px solid #ddd;
+}
+
+#cart-items {
+    list-style-type: none;
+    padding: 0;
+}
+
+#cart-items li {
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+}a{ text-decoration:none;font-weight:bold; }
+iframe.cont{position:absolute;width:80%;left:17%;height:13%; }
+iframe.homm{position:absolute;width:19%;left:0%;top:13%;height:54%;}
+iframe.allstort{position:absolute;left:20%;top:0%;width:60%;height:80%;background-color:Lavender;border-radius:10px;
+				overflow:scroll;  }
+iframe.acces{position:absolute;left:79%;top:13%;width:20%;height:30%;background-color: Lavender; border-radius:10px;}
+
+iframe.clot{position:absolute;left:79%;top:13%;width:20%;height:30%;background-color: Lavender; border-radius:10px;}
+
+iframe.perf{position:absolute;left:0%;top:70%;width:19%;height:29%;background-color: Lavender; border-radius:10px;}
+<!-- les styles de formule -->
+
+
+
+
+
+

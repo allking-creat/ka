@@ -1,0 +1,156 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #222;
+    color: white;
+    padding: 1em;
+    text-align: center;
+height:120%;
+}
+#lis{     background-color:#234;
+    color: white;
+    padding: 1em;
+text-align: center;}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+section {
+    padding: 20px;
+}
+
+#featured-products { border:0px;
+    
+}
+
+
+.product {
+    text-align: center;
+    margin: 20px;
+	background-color:#CAE1DD;
+	border:1px;
+	margin-top:30px;
+	margin-bottom:30px;
+	padding:30px;
+	
+}
+
+.price {
+    color: #007BFF;
+    font-weight: bold;
+}
+
+button {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#shopping-cart {
+    border-top: 1px solid #ddd;
+}
+
+#cart-items {
+    list-style-type: none;
+    padding: 0;
+}
+
+#cart-items li {
+    margin-bottom: 10px;background-color:white;
+}
+#wellcom{color:#000002;font-weight:bold;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 0.5;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+img{ width:25%;height:25%; }
+#collap{  
+ 
+}
+H1{ COLOR:#0008FF;
+background-color:#235;
+font-weight:bold;}
+a{ text-decoration:none;
+font-weight:bold;
+color:white;background-color:;
+}
+
+body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        section {
+            padding: 20px;
+            margin: 20px;
+            border: 1px solid #ddd;
+        }
+
+        h2 {
+            color: #59223E;
+			}
+	    
+		#coll{color:#000000;
+		font-weight:bold;
+		font-size:px;
+		}
+
+		
+		#icci{color:blue; }
+		#icci:hover{color:red; }
+		body{
+			background-image: url(I);
+		}
+		#shopping-cart{border-radius:30px 30px 0px 0px / 25px 30px 45px 45px;
+			background-image: url('IMG5 (4).jpg');
+			background-attachment:fixed;
+			background-size:100% 100%;
+			border-collapse:collapse;
+			margin-bottom:70px;
+			color:black;
+		}
+		
+	 body{
+			background-image: url('IMG5 (3).jpg');
+			background-attachment:fixed;
+			background-size:100% 100%;
+			
+		}
+		
+		
+		.pant{
+			background-image: url('IMG.jpg');
+			background-attachment:fixed;
+			background-size:100% 100%;
+		font-weight:bold;
+		}
+		
+		#tool{
+			font-weight:bold;
+			background-color:#CFE5FF;
+		}
