@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Men's Clothing Store</title>
+    <link rel="stylesheet" href="ALLSTORT.CSS">
+	<link rel="stylesheet" href="style.css">
+
+	<link rel="stylesheet" href="css/STYLE1.css">
+	<link href="img/IMG3.jpg" type="icon" rel="shortcut icon">
+	<script>
+	
+	// JavaScript for handling shopping cart functionality
+
+let cartItems = [];
+let totalPrice = 0;
+
+function addToCart(productName) {
+    const price = getProductPrice(productName);
+    cartItems.push({ name: productName, price: price });
+    totalPrice += price;
+
+    updateCartUI();
+
+}
+
+function checkout() {
+    alert(`Thank you for your purchase!\nTotal: $${totalPrice.toFixed(2)}`);
+    
+    // Reset cart after checkout
+    cartItems = [];
+    totalPrice = 0;
+    updateCartUI();
+}
+
+function updateCartUI() {
+    const cartList = document.getElementById('cart-items');
+    const totalPriceElement = document.getElementById('total-price');
+
+    // Clear existing cart items
+    cartList.innerHTML = '';
+
+    // Populate cart items
+    cartItems.forEach(item => {
+        const listItem = document.createElement('li');
+        listItem.textContent = `${item.name} - $${item.price.toFixed(2)}`;
+        cartList.appendChild(listItem);
+    });
+
+    // Update total price
+    totalPriceElement.textContent = `$${totalPrice.toFixed(2)}`;
+}
+
+function getProductPrice(productName) {
+    // You can implement logic to fetch product prices from a database or other source
+    // For simplicity, using static prices here
+    const productPrices = {
+        "Men's Shirt": 29.99,
+        "Men's Perfume": 49.99,
+        "Men's Watch": 39.99
+    };
+
+    return productPrices[productName] || 0;
+}
+</script>
+</head>
+<body> 
+
+
+
+<form class="form">
+    <label for="search">
+        <input required="" autocomplete="off" placeholder="search your chats" id="search" type="text">
+        <div class="icon">
+            <svg stroke-width="2" stroke="currentColor" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="swap-on">
+                <path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" stroke-linejoin="round" stroke-linecap="round"></path>
+            </svg>
+            <svg stroke-width="2" stroke="currentColor" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="swap-off">
+                <path d="M10 19l-7-7m0 0l7-7m-7 7h18" stroke-linejoin="round" stroke-linecap="round"></path>
+            </svg>
+        </div>
+        <button type="reset" class="close-btn">
+            <svg viewBox="0 0 20 20" class="h-5 w-5" xmlns="http://www.w3.org/2000/svg">
+                <path clip-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" fill-rule="evenodd"></path>
+            </svg>
+        </button>
+    </label>
+</form>
+
+
+<header>
+    <h1 >Welcome to the best store to shop at ALLSTORT</h1>
+    <nav>
+        <ul id="lis">
+            <li><a href="index.html" >Home</a></li>
+            <li><a href="CLOT.HTML">Clothing</a></li>
+            <li><a href="PERFUM.HTML">Perfumes</a></li>
+            <li><a href="CONT.HTML">Accessories</a></li>
+            <li><a href="ACCES.HTML">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section id="featured-products">
+    <h2 id="wellcom">Featured Products</h2>
+    <div class="product">
+        <img  class="magg" src="img/blue.jpg" alt="Men's Shirt">
+	 	  <img  class="magg" src="img/blue.jpg" alt="Men's Shirt">
+	        <img  class="magg" src="img/blue.jpg" alt="Men's Shirt">
+	          <img  class="magg" src="img/blue.jpg" alt="Men's Shirt">
+         <h3>Men's Shirt</h3>
+        <p class="price">$29.99</p>
+        <button onclick="addToCart('Men\'s Shirt')">Add to Cart</button>
+    </div>
+	<nav id="pass">
+	<ol type="I">
+	<li id="coll"> les choussurs	</li>
+	<p> clicker <a>ici</a> pour voir les produit <pre> bienvenue
+
+
+
+
+
+
+
+aurevoire
+
+</pre>	</p>
+	<li id="coll"> les choussets</li><p>clicker <a>ici</a> pour voir les produit  <pre> bienvenue
+
+
+
+
+
+
+
+aurevoire
+
+</pre></p>
+	<li id="coll"> les Parfums</li>
+	<p>  clicker <a>ici</a> pour voir les produit<pre> bienvenue
+
+
+
+
+
+
+
+aurevoire
+
+</pre></p>
+	<li id="coll">les Clothing </li>
+	<p>  clicker <a>ici</a> pour voir les produit<pre> bienvenue
+
+
+
+
+
+
+
+aurevoire
+
+</pre></p>
+	<li id="coll">les Accessoires </li>
+	<p>  clicker <a>ici</a> pour voir les produit<pre> bienvenue
+
+
+
+
+
+
+
+aurevoire
+
+</pre></p>
+	<li id="coll">  autre produit </li>
+	<p>clicker <a href="www.google.com" id="icci">ici</a> pour voir les produit  <pre> bienvenue
+
+
+
+
+
+
+
+aurevoire
+
+</pre></p>
+	</ol>
+	</nav>
+	<section>
+    <h2>Description du Site Web</h2>
+    <p>Bienvenue sur notre site de vente en ligne. Découvrez une expérience de shopping exceptionnelle avec une variété de produits de qualité.</p>
+</section>
+
+<section>
+    <h2>Types de Produits à Vendre</h2>
+    <ul>
+        <li>Vêtements pour Hommes</li>
+        <li>Parfums</li>
+        <li>Accessoires</li>
+        <!-- Add more product types as needed -->
+    </ul>
+</section>
+
+<section>
+    <h2>Détails des Produits</h2>
+    <p>Nos produits sont soigneusement sélectionnés pour répondre à vos besoins. Que vous recherchiez des vêtements élégants, des parfums envoûtants ou des accessoires tendance, nous avons ce qu'il vous faut.</p>
+    <p>Explorez notre collection et profitez d'offres exceptionnelles sur des articles de qualité supérieure.</p>
+</section>
+
+    <div class="product">
+        <img  class="magg" src="img/IMG1.jpg" alt="Men's Perfume">
+		<img  class="magg" src="img/IMG2.jpg" alt="Men's Watch">
+		
+		<img  class="magg" src="img/IMG1.jpg" alt="Men's Perfume">
+		<img  class="magg" src="img/IMG2.jpg" alt="Men's Watch">
+		
+        <h3>Men's Perfume</h3>
+        <p class="price">$49.99</p>
+        <button onclick="addToCart('Men\'s Perfume')">Add to Cart</button>
+    </div>
+
+    <div class="product">
+        <img  class="magg" src="img/IMG2.jpg" alt="Men's Watch">
+		  <img  class="magg" src="img/IMG1.jpg" alt="Men's Perfume"><img  class="magg" src="IMG1.jpg" alt="Men's Perfume">
+		    <img  class="magg" src="img/IMG2.jpg" alt="Men's Watch">
+     <h3>Men's Watch</h3>
+        <p class="price">$39.99</p>
+        <button onclick="addToCart('Men\'s Watch')">Add to Cart</button>
+    </div>  
+	<div class="product">
+        <h3>Men's Perfume</h3>
+        <p class="price">$49.99</p>
+        <button onclick="addToCart('Men\'s Perfume')">Add to Cart</button>
+     </div>
+
+	
+	
+</section>
+
+<section id="shopping-cart">    
+
+<div class="pant">
+    <h2 id="chapp">Shopping Cart</h2>
+    <ul id="cart-items">
+        <!-- Cart items will be dynamically added here using JavaScript -->
+    </ul>
+    <p id="tool">Total: <span id="total-price">$0.00</span></p>
+	</div>
+    <button onclick="checkout()">Checkout</button>
+</section>
+
+<footer>
+    <p>&copy; 2024 Men's Clothing Store. All rights reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+
+
+
+
+<div>
+  <nav class="Btn">
+    
+    <span > <img  class="BG" src="img/IMG2.jpg"> </span>
+  </nav>
+<button class="Btntwit">
+    <span>
+	<img  class="svgContainertwit" src="img/IMG2.jpg"> 
+   </span>
+    <span > <img  class="BGtwit" src="img/IMG2.jpg"> </span>
+  </button>
+</div>
+<div>
+  <button class="Btninsta">
+    <span >
+      <img  class="svgContainerinsta" src="img/IMG2.jpg"> 
+    </span>
+    <span"><img  class="BGinsta" src="img/IMG2.jpg"> </span>
+  </button>
+
+  <button class="Btnstock">
+    <span>
+      <img  class="svgContainerstock" src="img/IMG2.jpg"> 
+    </span>
+    <span ><img  class="BGstock" src="img/IMG2.jpg"> </span>
+  </button>
+</div>
+
+</body>
+</html>
